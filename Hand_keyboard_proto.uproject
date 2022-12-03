@@ -3,16 +3,6 @@
 	"EngineAssociation": "5.0",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-		{
-			"Name": "Hand_keyboard_proto",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	],
 	"Plugins": [
 		{
 			"Name": "ResonanceAudio",
@@ -39,11 +29,6 @@
 		{
 			"Name": "CascadeToNiagaraConverter",
 			"Enabled": true
-		},
-		{
-			"Name": "SplineSweepMesh",
-			"Enabled": true,
-			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/f9b003691cbc48d385c564491cab3c25"
 		}
 	],
 	"TargetPlatforms": [
