@@ -7,33 +7,33 @@
 #include "ReadWriteFile.generated.h"
 
 /**
- * 
+ *
  */
 USTRUCT(BlueprintType)
 struct HAND_KEYBOARD_PROTO_API FDataRecordUnitCpp
 {
 	GENERATED_BODY()
-		
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString Letter;
-	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FVector> LeftLocationList;
+
+		UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FString Letter;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<FVector> RightLocationList;
+		TArray<FVector> LeftLocationList;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float LeftDistance;
+		TArray<FVector> RightLocationList;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	float RightDistance;
+		float LeftDistance;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TArray<float> TimeList;
+		float RightDistance;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString PreviousLetter;
+		TArray<float> TimeList;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		FString PreviousLetter;
 
 	FDataRecordUnitCpp()
 	{

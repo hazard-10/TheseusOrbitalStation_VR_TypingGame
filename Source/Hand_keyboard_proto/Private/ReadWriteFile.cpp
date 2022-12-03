@@ -39,7 +39,7 @@ bool UReadWriteFile::ReadDataRecordFile(FString SaveDirectory, FString FileName,
 	// Read every line into Texts
 	TArray<FString> Texts;
 	FFileHelper::LoadFileToStringArray(Texts, *SaveDirectory);
-	
+
 	// Split each line, and store them
 	PastDataList.Add(FDataRecordUnitCpp()); // The first one
 	for (int i = 1; i < Texts.Num(); i++) {
@@ -50,7 +50,7 @@ bool UReadWriteFile::ReadDataRecordFile(FString SaveDirectory, FString FileName,
 			PastDataList.Add(FDataRecordUnitCpp());
 		}
 		else {
-			Texts[i-1].ParseIntoArray(WordsPre, TEXT(","), false);
+			Texts[i - 1].ParseIntoArray(WordsPre, TEXT(","), false);
 			if (Words[0] != WordsPre[0]) {
 				// Means this is a new letter
 				PastDataList.Add(FDataRecordUnitCpp());
