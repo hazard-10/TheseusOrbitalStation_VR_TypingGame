@@ -35,6 +35,24 @@ struct HAND_KEYBOARD_PROTO_API FDataRecordUnitCpp
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		FString PreviousLetter;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		int KeyboardIndex;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<FVector> LeftKeyboardLocationList;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<FVector> RightKeyboardLocationList;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<FVector> LeftKeyboardRotationList;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		TArray<FVector> RightKeyboardRotationList;
+
+
+
+
 	FDataRecordUnitCpp()
 	{
 		Letter = FString(TEXT(""));

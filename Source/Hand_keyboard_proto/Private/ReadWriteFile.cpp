@@ -59,10 +59,17 @@ bool UReadWriteFile::ReadDataRecordFile(FString SaveDirectory, FString FileName,
 		PastDataList[PastDataList.Num() - 1].Letter = Words[0];
 		PastDataList[PastDataList.Num() - 1].LeftLocationList.Add(FVector(FCString::Atof(*Words[1]), FCString::Atof(*Words[2]), FCString::Atof(*Words[3])));
 		PastDataList[PastDataList.Num() - 1].RightLocationList.Add(FVector(FCString::Atof(*Words[4]), FCString::Atof(*Words[5]), FCString::Atof(*Words[6])));
+
 		PastDataList[PastDataList.Num() - 1].LeftDistance = FCString::Atof(*Words[7]);
 		PastDataList[PastDataList.Num() - 1].RightDistance = FCString::Atof(*Words[8]);
 		PastDataList[PastDataList.Num() - 1].TimeList.Add(FCString::Atof(*Words[9]));
 		PastDataList[PastDataList.Num() - 1].PreviousLetter = Words[10];
+		PastDataList[PastDataList.Num() - 1].KeyboardIndex = FCString::Atoi(*Words[11]);
+
+		PastDataList[PastDataList.Num() - 1].LeftKeyboardLocationList.Add(FVector(FCString::Atof(*Words[12]), FCString::Atof(*Words[13]), FCString::Atof(*Words[14])));
+		PastDataList[PastDataList.Num() - 1].RightKeyboardLocationList.Add(FVector(FCString::Atof(*Words[15]), FCString::Atof(*Words[16]), FCString::Atof(*Words[17])));
+		PastDataList[PastDataList.Num() - 1].LeftKeyboardRotationList.Add(FVector(FCString::Atof(*Words[18]), FCString::Atof(*Words[19]), FCString::Atof(*Words[20])));
+		PastDataList[PastDataList.Num() - 1].RightKeyboardRotationList.Add(FVector(FCString::Atof(*Words[21]), FCString::Atof(*Words[22]), FCString::Atof(*Words[23])));
 	}
 
 	return true;
